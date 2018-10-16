@@ -1,0 +1,46 @@
+<!--Author: Chirag : : Mithil :: hiren
+-->
+<!DOCTYPE HTML>
+<html >
+<head>
+<title> Dictionary : :</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body ng-app="my_app" ng-controller = "ctrl">
+<!-- scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js "></script>
+<script type="text/javascript" src="file.js"></script>
+
+<!--header-->
+	<div class="header-w3l">
+		<h1> Dictionary </h1>
+	</div>
+
+<!--main-->
+<div class="main-content-agile">
+	<div class="sub-main-w3">	
+		<form action="" method="get">
+			<input placeholder="Search" name="modelname" class="user" type="text" required="" ng-model="modelname"><br>
+			<a ng-click="searchWord(modelname)" id ="click" type="submit">Go</a>
+		</form>
+	</div>
+</div>
+
+<!--footer-->
+<div class="footer">
+
+</div>
+
+<!--//output-->
+
+<div class="card" ng-repeat="x in resp">
+<strong style="font-size: 25px" >	{{x.resp}}</strong>
+</div>
+</body>
+</html>
